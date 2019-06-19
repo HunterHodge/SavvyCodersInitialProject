@@ -1,12 +1,11 @@
-Test for data preservation
-# Header, Biggest
-## Header 2
+# Hunter Hodge
+## Savvy Coders First Project Readme
 ### Header 3
 #### Header 4
 ##### Header 5
 ###### Header 6, smallest
 
-Lorem ipsum dolor sit amet consectur adpecing elit
+There is no information to describe this project
 
 ---
 
