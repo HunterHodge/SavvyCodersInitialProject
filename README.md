@@ -1,17 +1,17 @@
 # Hunter Hodge
 ## Savvy Coders First Project Readme
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6, smallest
+### Basically Hello World
+#### I assume each file will say 'Hello World' somewhere
+##### I'll just roll with it
+###### This text is small
 
-There is no information to describe this project
+Probably Hello World
 
 ---
 
-_Italicized_
+_Not how italians type_
 
-**Bold**
+**How bold of you**
 
 ~~Ignore this~~
 
