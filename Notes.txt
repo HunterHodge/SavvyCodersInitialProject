@@ -2,3 +2,4 @@ Download Slack
 Github U Hunter Hodge P (Change from default(gtg))
 Netlify Login through Github
 MDM search documentation for tags
+http-server . to simulate website
