@@ -2,17 +2,38 @@ body {
   font-family: "Playfair Display SC", serif;
   color: darkslategrey;
   background-color: #EBC8FF;
-  font-size: 1em;
+  font-size: 16px;
 }
 header {
   background-color: darkslategrey;
   color: #EBC8FF;
+  margin:0;
+}
+header h1{
+  font-size: 2em;
+  margin:0 1px 0 .3em;
+}
+header h2{
+  font-size: 1.5em;
+  margin:0 1px 0 .3em;
+}
+main{
+
+}
+footer{
+
+}
+figure{
+  margin: 0px auto;
+  width: 256px;
+  height:0;
 }
 a {
   text-decoration: underline;
   color: darkslategrey;
 }
 #headimg {
-  float: right;
   display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
