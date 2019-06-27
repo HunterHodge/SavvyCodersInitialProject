@@ -1,0 +1,17 @@
+body {
+  font-family: "Playfair Display SC", serif;
+  color: darkslategrey;
+  background-color: #EBC8FF;
+}
+header {
+  background-color: darkslategrey;
+  color: #EBC8FF;
+}
+a {
+  text-decoration: underline;
+  color: darkslategrey;
+}
+#headimg {
+  float: right;
+  display: block;
+}
