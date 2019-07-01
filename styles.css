@@ -1,39 +1,40 @@
 body {
   font-family: "Playfair Display SC", serif;
   color: darkslategrey;
-  background-color: #EBC8FF;
+  background-color: #ebc8ff;
   font-size: 16px;
+}
+nav:ul{
+
 }
 header {
   background-color: darkslategrey;
-  color: #EBC8FF;
-  margin:0;
+  color: #ebc8ff;
+  margin: 0;
+  background-image: "https://picsum.photos/id/363/2200/1000";
 }
-header h1{
+header h1 {
   font-size: 2em;
-  margin:0 1px 0 .3em;
+  margin: 0 1px 0 0.3em;
 }
-header h2{
+header h2 {
   font-size: 1.5em;
-  margin:0 1px 0 .3em;
+  margin: 0 1px 0 0.3em;
 }
-main{
 
-}
-footer{
-
-}
-figure{
+figure {
   margin: 0px auto;
-  width: 256px;
-  height:0;
+  width: 100vw;
+  height: 0;
 }
+
 a {
   text-decoration: underline;
   color: darkslategrey;
 }
+
 #headimg {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 100vw;
 }
