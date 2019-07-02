@@ -9,6 +9,9 @@ ul {
 li {
   list-style-type: none;
 }
+li a{
+  text-decoration: none;
+}
 /* Body */
 body {
   font-family: "Playfair Display SC", serif;
