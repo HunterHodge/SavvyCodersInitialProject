@@ -1,17 +1,46 @@
+/* Main body */
 body {
   font-family: "Playfair Display SC", serif;
   color: darkslategrey;
   background-color: #ebc8ff;
   font-size: 16px;
 }
-nav:ul{
-
+/* Navigation */
+nav {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 1vh;
+}
+#dropdown > ul {
+  position: absolute;
+  display: none;
+  list-style-type: none;
+  background: #ebc8ff;
+}
+#dropdown:hover > ul {
+  display: flex;
+  flex-direction: column;
+}
+#dropdown:focus > ul {
+  display: flex;
+}
+/* Header */
 header {
   background-color: darkslategrey;
   color: #ebc8ff;
-  margin: 0;
-  background-image: "https://picsum.photos/id/363/2200/1000";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("https://picsum.photos/id/363/2200/1000");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  height: 10vw;
 }
 header h1 {
   font-size: 2em;
@@ -21,20 +50,14 @@ header h2 {
   font-size: 1.5em;
   margin: 0 1px 0 0.3em;
 }
-
-figure {
-  margin: 0px auto;
-  width: 100vw;
-  height: 0;
-}
-
+/* Tags: General */
 a {
   text-decoration: underline;
   color: darkslategrey;
 }
-
-#headimg {
-  display: block;
-  margin: 0 auto;
-  max-width: 100vw;
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
 }
