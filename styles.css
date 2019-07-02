@@ -33,14 +33,15 @@ nav > ul {
 header {
   background-color: darkslategrey;
   color: #ebc8ff;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  background-image: url("https://picsum.photos/id/363/2200/1000");
+  flex-direction: row;
+  display: flex;
+  background-image: url("https://picsum.photos/2200/1000");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-  height: 10vw;
+  height: 40vw;
 }
 header h1 {
   font-size: 2em;
@@ -49,6 +50,13 @@ header h1 {
 header h2 {
   font-size: 1.5em;
   margin: 0 1px 0 0.3em;
+}
+header div{
+  background-color: rgba(32, 32, 32, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* Tags: General */
 a {
