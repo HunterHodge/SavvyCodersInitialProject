@@ -1,4 +1,15 @@
-/* Main body */
+/* Tags: General */
+a {
+  text-decoration: underline;
+  color: rgba(47, 79, 79, 1);
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+/* Body */
 body {
   font-family: "Playfair Display SC", serif;
   color: darkslategrey;
@@ -10,6 +21,7 @@ nav {
   width: 100vw;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 nav > ul {
   display: flex;
@@ -31,7 +43,7 @@ nav > ul {
 }
 /* Header */
 header {
-  background-color: darkslategrey;
+  background-color: rgba(47, 79, 79, 1);
   color: #ebc8ff;
   align-items: center;
   justify-content: center;
@@ -42,6 +54,7 @@ header {
   background-position: bottom center;
   background-size: cover;
   height: 40vw;
+  border-bottom: 10px solid rgba(47, 79, 79, 1);
 }
 header h1 {
   font-size: 2em;
@@ -51,21 +64,21 @@ header h2 {
   font-size: 1.5em;
   margin: 0 1px 0 0.3em;
 }
-header div{
-  background-color: rgba(32, 32, 32, 0.5);
+header div {
+  background-color: rgba(47, 79, 79, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* Tags: General */
-a {
-  text-decoration: underline;
-  color: darkslategrey;
+/* Main */
+main {
+  display: flex;
 }
-ul {
-  padding: 0;
+main > section {
+  margin: 10px;
 }
-li {
-  list-style-type: none;
+/* Footer */
+footer li {
+  display: inline-block;
 }
