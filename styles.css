@@ -92,9 +92,9 @@ main > section {
   transition: 0.25s;
 }
 .cta-btn:focus,
-.cta-btn:hover{
-background: black;
-transform: translateY(-3px);
+.cta-btn:hover {
+  background: black;
+  transform: translateY(-3px);
 }
 /* Footer */
 footer li {

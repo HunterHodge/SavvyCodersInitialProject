@@ -12,38 +12,129 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
     <title>Contact</title>
   </head>
   <body>
-    <header>
-      <h1>Contact</h1>
-    </header>
     <nav>
       <ul>
         <li><a href="../">Home</a></li>
         <li><a href="../About/">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li>
+        <li><a href="../Contact/">Contact</a></li>
+        <li id="dropdown">
           Portfolio
           <ul>
             <li><a href="../Projects/">Project 1</a></li>
-            <li><a href="">Project 2</a></li>
+            <li><a href="#textType">Project 2</a></li>
             <li><a href="">Project 3</a></li>
           </ul>
         </li>
       </ul>
     </nav>
 
+    <header>
+      <div>
+        <h1>Hunter Hodge</h1>
+        <h2>Contact</h2>
+      </div>
+    </header>
     <main>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque libero
-        molestias minima, ut consequuntur similique deserunt dignissimos
-        veritatis tempore repellat quasi in eligendi numquam inventore, soluta,
-        eos nemo optio vitae.
-      </p>
+      <!--
+      The action attribute defines where on the server the form data should be sent
+      The method attribute specifies the HTTP method (GET or POST)
+    -->
+
+      <form action="form-responses/new" method="POST">
+        <!-- Developer's Note: 'placeholder' without using `<label>` is NOT RECOMMENDED for accessibility purposes. -->
+        <input
+          type="text"
+          name="firstname"
+          placeholder="First Name"
+          size="100"
+          autofocus
+        />
+        <input type="text" name="lastname" placeholder="Last Name" size="100" />
+        <input
+          type="email"
+          name="userEmail"
+          placeholder="your.email@example.com"
+        />
+
+        <p>What's this message about?</p>
+
+        <div>
+          <input
+            type="radio"
+            name="subject"
+            value="professional"
+            id="pro"
+            checked
+          />
+          <label for="pro">I'd like to hire you!</label>
+        </div>
+
+        <div>
+          <input type="radio" name="subject" value="personal" id="personal" />
+          <label for="personal">Personal message</label>
+        </div>
+        <div>
+          <input type="radio" name="subject" value="other" />
+          <label>Don't know/something else</label>
+        </div>
+
+        <input type="checkbox" name="optin" value="trusting" checked />Subscribe
+        me to your newsletter!
+        <input type="checkbox" name="optout" value="skeptical" disabled />Cheeky
+        checkbox...
+
+        <label for="marketing">How did you hear about me?</label>
+        <select name="marketing">
+          <optgroup label="Online">
+            <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
+            <option value="github">Online Portfolio (GitHub)</option>
+            <option value="search">Search Engine</option>
+            <option value="email">Email</option>
+          </optgroup>
+          <optgroup label="In-Person">
+            <option value="networking">We met at a networking event</option>
+            <option value="referral">Personal referral</option>
+            <option value="random">We met somewhere else</option>
+          </optgroup>
+          <option value="other">Other</option>
+        </select>
+
+        <textarea name="user_message" rows="8" cols="40"></textarea>
+        <input type="submit" />
+        <input type="reset" value="Reset">
+      </form>
     </main>
-    <footer></footer>
+    <footer>
+      <!-- TODO: Update icons -->
+      <ul>
+        <li>
+          <a href="http://www.github.com/hunterhodge" target="_blank">
+            <span class="fab fa-github-square"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.github.com/hunterhodge" target="_blank">
+            <span class="fab fa-github-square"></span>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.github.com/hunterhodge" target="_blank">
+            <span class="fab fa-github-square"></span>
+          </a>
+        </li>
+      </ul>
+      <address>
+        Hunter Hodge<br />
+        11933 Barbezieux Dr. <br />
+      </address>
+    </footer>
   </body>
 </html>
