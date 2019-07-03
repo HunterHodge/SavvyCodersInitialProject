@@ -48,7 +48,7 @@
       The method attribute specifies the HTTP method (GET or POST)
     -->
 
-      <form action="form-responses/new" method="POST">
+      <form action="form-responses/new" method="POST" netlify>
         <!-- Developer's Note: 'placeholder' without using `<label>` is NOT RECOMMENDED for accessibility purposes. -->
 
         <div class="input-group">
@@ -125,9 +125,11 @@
           </select>
         </div>
 
-        <textarea name="user_message" rows="8" cols="40"></textarea>
-        <input type="submit" />
-        <input type="reset" value="Reset" />
+        <div class="input-group input-group--flex">
+          <textarea name="user_message" rows="8" cols="40"></textarea>
+          <input type="submit" />
+          <input type="reset" value="Reset" />
+        </div>
       </form>
     </main>
     <footer>
