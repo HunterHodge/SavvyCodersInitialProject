@@ -1,7 +1,7 @@
 # Hunter Hodge
 ## Savvy Coders First Project Readme
 ### Basically Hello World
-#### I assume each file will say 'Hello World' somewhere
+#### Actually not as much Hello World as expected
 ##### I'll just roll with it
 ###### This text is small
 
