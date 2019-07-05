@@ -1,7 +1,7 @@
 /* Tags: General */
 a {
   text-decoration: underline;
-  color: rgba(47, 79, 79, 1);
+  color: #2f4f4f;
 }
 ul {
   padding: 0;
@@ -15,7 +15,7 @@ li a {
 /* Body */
 body {
   font-family: "Playfair Display SC", serif;
-  color: darkslategrey;
+  color: #2f4f4f;
   background-color: #ebc8ff;
   font-size: 16px;
 }
@@ -44,7 +44,7 @@ nav > ul {
 }
 /* Header */
 header {
-  background-color: rgba(47, 79, 79, 1);
+  background-color: #2f4f4f;
   color: #ebc8ff;
   align-items: center;
   justify-content: center;
@@ -55,7 +55,7 @@ header {
   background-position: bottom center;
   background-size: cover;
   height: 40vw;
-  border-bottom: 10px solid rgba(47, 79, 79, 1);
+  border-bottom: 10px solid #2f4f4f;
 }
 header h1 {
   font-size: 2em;
@@ -81,7 +81,7 @@ main > section {
   margin: 10px;
 }
 .cta-btn {
-  background: rgba(47, 79, 79, 1);
+  background: #2f4f4f;
   color: #ebc8ff;
   padding: 10px;
   margin: 0px 10px;
@@ -101,26 +101,39 @@ footer li {
   display: inline-block;
 }
 /* Form */
-form{
-  border:3px solid pink;
+form {
+  border: 3px solid #2f4f4f;
+  border-radius: 2px;
   max-width: 60vw;
   margin: 15px auto;
   padding: 5px;
 }
-form span{
-  margin:12px;
+form span {
+  margin: 12px;
 }
 
-input[type=radio],
-input[type=checkbox]{
+input[type="radio"],
+input[type="checkbox"] {
   margin-right: 11px;
   transform: translateY(2px);
 }
-.input-group{
+.input-group {
   margin: 15px 0px;
 }
-.input-group--flex{
+.input-group--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.input-group--flex {
   display: flex;
   flex-direction: column;
-  max-width:50%;
+  max-width: 50%;
+}
+.input-group--flex > div {
+  display: flex;
+  margin-top: 3px;
+}
+.input-group--flex > div > input {
+  width: 50%;
 }

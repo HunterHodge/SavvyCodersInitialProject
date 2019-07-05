@@ -51,7 +51,7 @@
       <form action="form-responses/new" method="POST" netlify>
         <!-- Developer's Note: 'placeholder' without using `<label>` is NOT RECOMMENDED for accessibility purposes. -->
 
-        <div class="input-group">
+        <div class="input-group input-group--row">
           <input
             type="text"
             name="firstname"
@@ -69,7 +69,7 @@
         <div class="input-group">
           <p>What's this message about?</p>
 
-          <span>
+          <div>
             <input
               type="radio"
               name="subject"
@@ -78,16 +78,15 @@
               checked
             />
             <label for="pro">I'd like to hire you!</label>
-          </span>
-
-          <span>
+          </div>
+          <div>
             <input type="radio" name="subject" value="personal" id="personal" />
             <label for="personal">Personal message</label>
-          </span>
-          <span>
+          </div>
+          <div>
             <input type="radio" name="subject" value="other" />
             <label>Don't know/something else</label>
-          </span>
+          </div>
         </div>
 
         <div class="input-group">
@@ -97,12 +96,6 @@
             value="trusting"
             checked
           />Subscribe me to your newsletter!
-          <input
-            type="checkbox"
-            name="optout"
-            value="skeptical"
-            disabled
-          />Cheeky checkbox...
         </div>
 
         <label for="marketing">How did you hear about me?</label>
@@ -127,8 +120,10 @@
 
         <div class="input-group input-group--flex">
           <textarea name="user_message" rows="8" cols="40"></textarea>
-          <input type="submit" />
-          <input type="reset" value="Reset" />
+          <div>
+            <input type="submit" />
+            <input type="reset" value="Reset" />
+          </div>
         </div>
       </form>
     </main>
