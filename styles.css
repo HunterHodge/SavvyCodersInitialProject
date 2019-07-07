@@ -148,6 +148,9 @@ input[type="checkbox"] {
   flex-direction: row;
   justify-content: space-between;
 }
+.input-group--row input{
+  width: 50%;
+}
 .input-group--flex {
   display: flex;
   flex-direction: column;
