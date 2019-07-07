@@ -20,136 +20,146 @@
     <title>Contact</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../About/">About</a></li>
-        <li><a href="../Contact/">Contact</a></li>
-        <li id="dropdown">
-          Portfolio
-          <ul>
-            <li><a href="../Projects/">Project 1</a></li>
-            <li><a href="#textType">Project 2</a></li>
-            <li><a href="">Project 3</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../About/">About</a></li>
+          <li><a href="../Contact/">Contact</a></li>
+          <li id="dropdown">
+            Portfolio
+            <ul>
+              <li><a href="../Projects/">Project 1</a></li>
+              <li><a href="#textType">Project 2</a></li>
+              <li><a href="">Project 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
-    <header>
-      <div>
-        <h1>Hunter Hodge</h1>
-        <h2>Contact</h2>
-      </div>
-    </header>
-    <main>
-      <!--
-      The action attribute defines where on the server the form data should be sent
-      The method attribute specifies the HTTP method (GET or POST)
-    -->
-
-      <form action="form-responses/new" method="POST" netlify>
-        <!-- Developer's Note: 'placeholder' without using `<label>` is NOT RECOMMENDED for accessibility purposes. -->
-
-        <div class="input-group input-group--row">
-          <input
-            type="text"
-            name="firstname"
-            placeholder="First Name"
-            autofocus
-          />
-          <input type="text" name="lastname" placeholder="Last Name" />
-          <input
-            type="email"
-            name="userEmail"
-            placeholder="your.email@example.com"
-          />
+      <header>
+        <div>
+          <div class="title">
+            <h1>Hunter Hodge</h1>
+            <h2>Contact</h2>
+          </div>
         </div>
+      </header>
 
-        <div class="input-group">
-          <p>What's this message about?</p>
+      <main>
+        <!--
+            The action attribute defines where on the server the form data should be sent
+            The method attribute specifies the HTTP method (GET or POST)
+          -->
 
-          <div>
+        <form action="form-responses/new" method="POST" netlify>
+          <!-- Developer's Note: 'placeholder' without using `<label>` is NOT RECOMMENDED for accessibility purposes. -->
+
+          <div class="input-group input-group--row">
             <input
-              type="radio"
-              name="subject"
-              value="professional"
-              id="pro"
-              checked
+              type="text"
+              name="firstname"
+              placeholder="First Name"
+              autofocus
             />
-            <label for="pro">I'd like to hire you!</label>
+            <input type="text" name="lastname" placeholder="Last Name" />
+            <input
+              type="email"
+              name="userEmail"
+              placeholder="your.email@example.com"
+            />
           </div>
-          <div>
-            <input type="radio" name="subject" value="personal" id="personal" />
-            <label for="personal">Personal message</label>
-          </div>
-          <div>
-            <input type="radio" name="subject" value="other" />
-            <label>Don't know/something else</label>
-          </div>
-        </div>
 
-        <div class="input-group">
-          <input
-            type="checkbox"
-            name="optin"
-            value="trusting"
-            checked
-          />Subscribe me to your newsletter!
-        </div>
+          <div class="input-group">
+            <p>What's this message about?</p>
 
-        <label for="marketing">How did you hear about me?</label>
-        <div class="input-group input-group--flex">
-          <select name="marketing">
-            <optgroup label="Online">
-              <option value="social"
-                >Social Media (FB, Twitter, LinkedIn)</option
-              >
-              <option value="github">Online Portfolio (GitHub)</option>
-              <option value="search">Search Engine</option>
-              <option value="email">Email</option>
-            </optgroup>
-            <optgroup label="In-Person">
-              <option value="networking">We met at a networking event</option>
-              <option value="referral">Personal referral</option>
-              <option value="random">We met somewhere else</option>
-            </optgroup>
-            <option value="other">Other</option>
-          </select>
-        </div>
-
-        <div class="input-group input-group--flex">
-          <textarea name="user_message" rows="8" cols="40"></textarea>
-          <div>
-            <input type="submit" />
-            <input type="reset" value="Reset" />
+            <div>
+              <input
+                type="radio"
+                name="subject"
+                value="professional"
+                id="pro"
+                checked
+              />
+              <label for="pro">I'd like to hire you!</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="subject"
+                value="personal"
+                id="personal"
+              />
+              <label for="personal">Personal message</label>
+            </div>
+            <div>
+              <input type="radio" name="subject" value="other" />
+              <label>Don't know/something else</label>
+            </div>
           </div>
-        </div>
-      </form>
-    </main>
-    <footer>
-      <!-- TODO: Update icons -->
-      <ul>
-        <li>
-          <a href="http://www.github.com/hunterhodge" target="_blank">
-            <span class="fab fa-github-square"></span>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.github.com/hunterhodge" target="_blank">
-            <span class="fab fa-github-square"></span>
-          </a>
-        </li>
-        <li>
-          <a href="http://www.github.com/hunterhodge" target="_blank">
-            <span class="fab fa-github-square"></span>
-          </a>
-        </li>
-      </ul>
-      <address>
-        Hunter Hodge<br />
-        11933 Barbezieux Dr. <br />
-      </address>
-    </footer>
+
+          <div class="input-group">
+            <input
+              type="checkbox"
+              name="optin"
+              value="trusting"
+              checked
+            />Subscribe me to your newsletter!
+          </div>
+
+          <label for="marketing">How did you hear about me?</label>
+          <div class="input-group input-group--flex">
+            <select name="marketing">
+              <optgroup label="Online">
+                <option value="social"
+                  >Social Media (FB, Twitter, LinkedIn)</option
+                >
+                <option value="github">Online Portfolio (GitHub)</option>
+                <option value="search">Search Engine</option>
+                <option value="email">Email</option>
+              </optgroup>
+              <optgroup label="In-Person">
+                <option value="networking">We met at a networking event</option>
+                <option value="referral">Personal referral</option>
+                <option value="random">We met somewhere else</option>
+              </optgroup>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="input-group input-group--flex">
+            <textarea name="user_message" rows="8" cols="40"></textarea>
+            <div>
+              <input type="submit" />
+              <input type="reset" value="Reset" />
+            </div>
+          </div>
+        </form>
+      </main>
+      <footer>
+        <!-- TODO: Update icons -->
+        <ul>
+          <li>
+            <a href="http://www.github.com/hunterhodge" target="_blank">
+              <span class="fab fa-github-square"></span>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.github.com/hunterhodge" target="_blank">
+              <span class="fab fa-github-square"></span>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.github.com/hunterhodge" target="_blank">
+              <span class="fab fa-github-square"></span>
+            </a>
+          </li>
+        </ul>
+        <address>
+          Hunter Hodge<br />
+          11933 Barbezieux Dr. <br />
+        </address>
+      </footer>
+    </div>
   </body>
 </html>

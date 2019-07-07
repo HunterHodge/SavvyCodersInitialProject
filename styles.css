@@ -19,8 +19,25 @@ body {
   background-color: #ebc8ff;
   font-size: 16px;
 }
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-template-rows:
+    minmax(20px, auto)
+    minmax(40vw, auto)
+    minmax(16px, auto)
+    minmax(100px, auto);
+
+  grid-template-areas:
+    "navigation"
+    "header"
+    "main"
+    "footer";
+}
 /* Navigation */
 nav {
+  grid-area: navigation;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -44,17 +61,12 @@ nav > ul {
 }
 /* Header */
 header {
-  background-color: #2f4f4f;
+  grid-area: header;
   color: #ebc8ff;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  display: flex;
   background-image: url("https://picsum.photos/2200/1000");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-  height: 40vw;
   border-bottom: 10px solid #2f4f4f;
 }
 header h1 {
@@ -66,15 +78,23 @@ header h2 {
   margin: 1px 1em;
 }
 header div {
+  text-align: center;
+  border-radius: 3px;
+}
+header .title {
+  border-radius: 3px;
   background-color: rgba(47, 79, 79, 0.5);
+}
+header > div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
+  height: 100%;
 }
 /* Main */
 main {
+  grid-area: main;
   display: flex;
 }
 main > section {
@@ -97,6 +117,9 @@ main > section {
   transform: translateY(-3px);
 }
 /* Footer */
+footer {
+  grid-area: footer;
+}
 footer li {
   display: inline-block;
 }
