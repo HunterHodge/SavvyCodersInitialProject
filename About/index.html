@@ -12,39 +12,71 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <title>About me</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <!-- Developers note: Custom styles should be loaded last so that they are not overwritten -->
+    <title>Portfolio - Hunter Hodge</title>
   </head>
   <body>
-    <header>
-      <h1>About me</h1>
-    </header>
-    <!-- TODO: Make this a dropdown menu -->
-    <nav>
-      <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="../Contact/">Contact</a></li>
-        <li>
-          Portfolio
-          <ul>
-            <li><a href="../Projects/">Project 1</a></li>
-            <li><a href="">Project 2</a></li>
-            <li><a href="">Project 3</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../About/">About</a></li>
+          <li><a href="../Contact/">Contact</a></li>
+          <li id="dropdown">
+            Portfolio
+            <ul>
+              <li><a href="../Projects/">Project 1</a></li>
+              <li><a href="#textType">Project 2</a></li>
+              <li><a href="">Project 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
 
-    <main>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque libero
-        molestias minima, ut consequuntur similique deserunt dignissimos
-        veritatis tempore repellat quasi in eligendi numquam inventore, soluta,
-        eos nemo optio vitae.
-      </p>
-    </main>
-    <footer></footer>
+      <header>
+        <div>
+          <h1>Hunter Hodge</h1>
+          <h2>About</h2>
+        </div>
+      </header>
+
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+          quisquam accusamus, perferendis sit sequi aliquid, commodi
+          perspiciatis reiciendis at cupiditate beatae labore et libero, dolore
+          minus laboriosam ea numquam ut.
+        </p>
+      </main>
+      <footer>
+        <!-- TODO: Update icons -->
+        <ul>
+          <li>
+            <a href="http://www.github.com/hunterhodge" target="_blank">
+              <span class="fab fa-github-square"></span>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.github.com/hunterhodge" target="_blank">
+              <span class="fab fa-github-square"></span>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.github.com/hunterhodge" target="_blank">
+              <span class="fab fa-github-square"></span>
+            </a>
+          </li>
+        </ul>
+        <address>
+          Hunter Hodge<br />
+          11933 Barbezieux Dr. <br />
+        </address>
+      </footer>
+    </div>
   </body>
 </html>
