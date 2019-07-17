@@ -1,4 +1,5 @@
-export default `
+export default function(state){
+    return `
 <main>
   <section>
     <h3>Top section</h3>
@@ -32,3 +33,4 @@ export default `
   </section>
 </main>
 `;
+}

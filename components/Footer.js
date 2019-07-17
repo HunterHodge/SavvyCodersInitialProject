@@ -1,4 +1,5 @@
-export default `
+export default function(state){
+    return `
 <footer>
   <!-- TODO: Update icons -->
   <ul>
@@ -24,3 +25,4 @@ export default `
   </address>
 </footer>
 `;
+}
