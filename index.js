@@ -2,7 +2,6 @@ import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import { stat } from 'fs';
 
 const states = {
     'home': {
@@ -31,13 +30,10 @@ ${Footer(state)}`;
 render(states.home);
 const navSwitch = document.querySelectorAll('nav > ul >li:not(#dropdown)');
 
-let i = 0;
-
-while(i < navSwitch.length){
-    navSwitch[i].addEventListener('click', function clickHandler(event){
+navSwitch.forEach(function switchpage(element){
+    element.addEventListener('click', function clickHandler(event){
         event.preventDefault();
         console.log(event.target.textContent);
         render(states[event.target.textContent.toLowerCase()]);
     });
-    i += 1;
-}
+});
