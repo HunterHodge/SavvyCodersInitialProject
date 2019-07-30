@@ -32,7 +32,6 @@ ${Footer(state)}`;
     navSwitch.forEach(function switchpage(element){
         element.addEventListener('click', function clickHandler(event){
             event.preventDefault();
-            console.log(event.target.textContent);
             render(states[event.target.textContent.toLowerCase()]);
         });
     });
