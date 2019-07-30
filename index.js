@@ -26,14 +26,15 @@ ${Navigation(state)}
 ${Header(state)}
 ${Main(state)}
 ${Footer(state)}`;
+
+    const navSwitch = document.querySelectorAll('nav > ul >li:not(#dropdown)');
+
+    navSwitch.forEach(function switchpage(element){
+        element.addEventListener('click', function clickHandler(event){
+            event.preventDefault();
+            console.log(event.target.textContent);
+            render(states[event.target.textContent.toLowerCase()]);
+        });
+    });
 }
 render(states.home);
-const navSwitch = document.querySelectorAll('nav > ul >li:not(#dropdown)');
-
-navSwitch.forEach(function switchpage(element){
-    element.addEventListener('click', function clickHandler(event){
-        event.preventDefault();
-        console.log(event.target.textContent);
-        render(states[event.target.textContent.toLowerCase()]);
-    });
-});
