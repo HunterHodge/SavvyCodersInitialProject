@@ -4,11 +4,11 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 
 const store = {
-    'links': {
-        'primary': [ 'Home', 'About', 'Contact' ],
-        'dropdown': [ 'Project 1', 'Project 2', 'Project 3' ]
-    },
     'home': {
+        'links': {
+            'primary': [ 'Home', 'About', 'Contact' ],
+            'dropdown': [ 'Project 1', 'Project 2', 'Project 3' ]
+        },
         'title': 'This is the home page!',
         'page': `
         <section>
@@ -43,6 +43,10 @@ const store = {
         </section>`
     },
     'about': {
+        'links': {
+            'primary': [ 'Home', 'About', 'Contact' ],
+            'dropdown': [ 'Project 1', 'Project 2', 'Project 3' ]
+        },
         'title': 'About page',
         'page': `
         <p>
@@ -53,6 +57,10 @@ const store = {
         </p>`
     },
     'contact': {
+        'links': {
+            'primary': [ 'Home', 'About', 'Contact' ],
+            'dropdown': [ 'Project 1', 'Project 2', 'Project 3' ]
+        },
         'title': 'Contact',
         'page': `<!--
         The action attribute defines where on the server the form data should be sent
