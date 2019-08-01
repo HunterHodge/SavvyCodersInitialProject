@@ -1,16 +1,18 @@
+
+function linkBuilder(links){
+    return links.map(function linkHandler(link){
+        return `<li>${link}</li>`;
+    }).join('');
+}
 export default function(state){
     return `
 <nav>
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="./About/">About</a></li>
-    <li><a href="./Contact/">Contact</a></li>
+  ${linkBuilder(state.links.primary)}
     <li id="dropdown">
       Portfolio
       <ul>
-        <li><a href="./Projects/">Project 1</a></li>
-        <li><a href="#textType">Project 2</a></li>
-        <li><a href="">Project 3</a></li>
+        ${linkBuilder(state.links.dropdown)}
       </ul>
     </li>
   </ul>
