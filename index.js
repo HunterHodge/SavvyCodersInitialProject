@@ -3,6 +3,10 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
+import Navigo from 'navigo';
+
+const router = new Navigo(location.origin);
+
 const store = {
     'home': {
         'links': {
@@ -184,4 +188,12 @@ ${Footer(state)}`;
         });
     });
 }
-render(store.home);
+
+router.on(':view', function handleParams(params){
+    console.log(params);
+    render(store[params.view]);
+})
+    .on('/', function resolver(){
+        render(store.home);
+    }).resolve();
+
