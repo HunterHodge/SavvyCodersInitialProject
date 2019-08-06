@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 const store = {
     'home': {
         'links': {
-            'primary': [ 'Home', 'About', 'Contact' ],
+            'primary': [ 'Home', 'About', 'Contact','Blog' ],
             'dropdown': [ 'Project 1', 'Project 2', 'Project 3' ]
         },
         'title': 'This is the home page!',
@@ -44,7 +44,7 @@ const store = {
     },
     'about': {
         'links': {
-            'primary': [ 'Home', 'About', 'Contact' ],
+            'primary': [ 'Home', 'About', 'Contact','Blog' ],
             'dropdown': [ 'Project 1', 'Project 2', 'Project 3' ]
         },
         'title': 'About page',
@@ -58,7 +58,7 @@ const store = {
     },
     'contact': {
         'links': {
-            'primary': [ 'Home', 'About', 'Contact' ],
+            'primary': [ 'Home', 'About', 'Contact','Blog' ],
             'dropdown': [ 'Project 1', 'Project 2', 'Project 3' ]
         },
         'title': 'Contact',
@@ -152,6 +152,14 @@ const store = {
         </div>
       </div>
     </form>`
+    },
+    'blog': {
+        'links': {
+            'primary': [ 'Home', 'About', 'Contact','Blog' ],
+            'dropdown': [ 'Project 1', 'Project 2', 'Project 3' ]
+        },
+        'title': 'Blog',
+        'page': '<p>Loading blog posts</p>'
     }
 };
 
