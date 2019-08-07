@@ -126,7 +126,7 @@ footer li {
 form {
   border: 3px solid #2f4f4f;
   border-radius: 2px;
-  max-width: 60vw;
+  width: 60vw;
   margin: 15px auto;
   padding: 5px;
 }
