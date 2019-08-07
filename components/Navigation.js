@@ -1,7 +1,7 @@
 
 linkBuilder(links){
     return links.map(function linkHandler(link){
-        return `<li>${link}</li>`;
+        return `<li><a href="./${link.toLowerCase()}" data-navigo>${link}</a></li>`;
     }).join('');
 }
 export default function(state){
