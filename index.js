@@ -177,8 +177,8 @@ ${Footer(state)}`;
 
     const navSwitch = document.querySelectorAll('nav > ul >li:not(#dropdown)');
 
-    navSwitch.forEach(function switchpage(element){
-        element.addEventListener('click', function clickHandler(event){
+    navSwitch.forEach((element) => {
+        element.addEventListener('click', (event) => {
             event.preventDefault();
             render(store[event.target.textContent.toLowerCase()]);
         });

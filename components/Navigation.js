@@ -1,5 +1,5 @@
 
-function linkBuilder(links){
+linkBuilder(links){
     return links.map(function linkHandler(link){
         return `<li>${link}</li>`;
     }).join('');
