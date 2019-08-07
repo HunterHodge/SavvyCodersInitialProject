@@ -179,22 +179,21 @@ ${Header(state)}
 ${Main(state)}
 ${Footer(state)}`;
 
-    // router.updatePageLinks();
-    const navSwitch = document.querySelectorAll('nav > ul >li:not(#dropdown)');
+    router.updatePageLinks();
+    /* const navSwitch = document.querySelectorAll('nav > ul >li:not(#dropdown)');
 
     navSwitch.forEach((element) => {
         element.addEventListener('click', (event) => {
             event.preventDefault();
             render(store[event.target.textContent.toLowerCase()]);
         });
-    });
+    });*/
 }
 
-router.on(':view', function handleParams(params){
-    console.log(params);
+router.on(':view', (params) => {
     render(store[params.view]);
 })
-    .on('/', function resolver(){
+    .on('/', () => {
         render(store.home);
     }).resolve();
 

@@ -1,5 +1,4 @@
-export default function(state){
-    return `
+export default (state) => `
 <footer>
   <!-- TODO: Update icons -->
   <ul>
@@ -19,10 +18,5 @@ export default function(state){
       </a>
     </li>
   </ul>
-  <address>
-    Hunter Hodge<br />
-    11933 Barbezieux Dr. <br />
-  </address>
 </footer>
 `;
-}
