@@ -4,6 +4,7 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 
 import Navigo from 'navigo';
+import axios from 'axios';
 
 const router = new Navigo(location.origin);
 
@@ -174,26 +175,37 @@ const store = {
 */
 function render(state){
     document.querySelector('#root').innerHTML = `
-${Navigation(state)}
-${Header(state)}
-${Main(state)}
-${Footer(state)}`;
+    ${Navigation(state)}
+    ${Header(state)}
+    ${Main(state)}
+    ${Footer(state)}
+    `;
 
     router.updatePageLinks();
-    /* const navSwitch = document.querySelectorAll('nav > ul >li:not(#dropdown)');
-
-    navSwitch.forEach((element) => {
-        element.addEventListener('click', (event) => {
-            event.preventDefault();
-            render(store[event.target.textContent.toLowerCase()]);
-        });
-    });*/
 }
 
-router.on(':view', (params) => {
-    render(store[params.view]);
-})
+router
+    .on(':view', (params) => {
+        render(store[params.view]);
+    })
     .on('/', () => {
         render(store.home);
-    }).resolve();
+    })
+    .resolve();
 
+axios.get('https://jsonplaceholder.typicode.com/posts').then((response) => {
+    const blogPosts = response.data;
+
+    const blogHTML = blogPosts
+        .map(
+            (blogPost) => `
+          <section>
+          <h2>${blogPost.title}</h2>
+          <p>${blogPost.body}</p>
+          </section>
+          `
+        )
+        .join(' ');
+
+    store.blog.page = blogHTML;
+});
