@@ -179,6 +179,7 @@ ${Header(state)}
 ${Main(state)}
 ${Footer(state)}`;
 
+    // router.updatePageLinks();
     const navSwitch = document.querySelectorAll('nav > ul >li:not(#dropdown)');
 
     navSwitch.forEach(function switchpage(element){
